@@ -26,6 +26,11 @@ nav ul li {
   justify-content: flex-end;
   padding: 10px;
 }
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 .student {
   display: flex;
   height: 400px;
