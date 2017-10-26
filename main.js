@@ -115,7 +115,7 @@ if (response > 5.0 || response < 0.0) {
 welcomeCollegeStudent = function (studentClass) {
   alert("Welcome " + studentClass + "!");
 };
-welcomeHSStudent = function () {
+welcomeHsStudent = function (studentClass) {
   alert("You're still a " + studentClass + "!");
 };
 var gradDate = function (month, year) {
