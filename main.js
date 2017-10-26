@@ -34,9 +34,11 @@ console.log(semester[0]);
 */
 
 //PART 2 Challenge #1
+/*
 var teacher = "Sally Jones";
 var ratings = [4.2, 3.8, 2.0];
 
+//first try at javascript function in CG Education
 var avgRating = function addTeacherRating (ratingsArray, newRating) {
   ratings.push(newRating);
   var sum = 0;
@@ -59,3 +61,53 @@ else {
   response;
 }
 alert("Thanks for your review! " + teacher + " 's average rating is now ");
+*/
+
+//Second attempt
+/*
+var teacher = "Sally Jones";
+var ratings = [4.2, 3.8, 2.0];
+
+function getRatingAvg (ratings) {
+  sum = 0;
+  for(i=0; i<ratings.length; i++) {
+    sum += ratings[i];
+    var avg = sum/ratings.length;
+  }
+  return avg;
+}
+getRatingAvg();
+
+function addTeacherRating(ratings, newRating) {
+  ratings.push(newRating);
+  getRatingAvg();
+}
+addTeacherRating(ratings, 10);
+*/
+var teacher = "Sally Jones";
+var ratings = [4.2, 3.8, 2.0];
+//get current array average
+function getRatingAvg (ratings) {
+  sum = 0;
+  for(i=0; i<ratings.length; i++) {
+    sum += ratings[i];
+    var avg = sum/ratings.length;
+  }
+  return avg;
+}
+//pushes newRating to end of ratings array
+function addTeacherRating(ratings, newRating) {
+  ratings.push(newRating);
+  return ratings;
+}
+//check if the user's response is an integer, alert average back 
+function checkUserResponse () {
+var response = parseInt(prompt("We would like for you to review. Please enter a rating between 0.0-5.0?"));
+if (response > 5.0 || response < 0.0) {
+    prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
+  }
+  else {
+    addTeacherRating(ratings,response);
+  }
+  alert("Thanks for your review! " + teacher + "'s average ratings is now " + " " + getRatingAvg(ratings));
+}
