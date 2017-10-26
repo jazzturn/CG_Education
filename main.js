@@ -118,3 +118,6 @@ welcomeCollegeStudent = function (studentClass) {
 welcomeHSStudent = function () {
   alert("You're still a " + studentClass + "!");
 };
+var gradDate = function (month, year) {
+  return month + " " + parseInt(year);
+};
