@@ -121,3 +121,16 @@ welcomeHsStudent = function (studentClass) {
 var gradDate = function (month, year) {
   return month + " " + parseInt(year);
 };
+//below is the start of the function needed to figure out graduating class and welome message to match
+var welcomeStudent = function (studentClass) {
+  if () {
+
+  }
+  else {
+
+  }
+}
+function welcomeStudentByGraduatingClass (gradDate, welcomeStudent) {
+  if gradDate = "Freshman"
+
+}
