@@ -100,7 +100,7 @@ function addTeacherRating(ratings, newRating) {
   ratings.push(newRating);
   return ratings;
 }
-//check if the user's response is an integer, alert average back 
+//check if the user's response is an integer, alert average back
 function checkUserResponse () {
 var response = parseInt(prompt("We would like for you to review. Please enter a rating between 0.0-5.0?"));
 if (response > 5.0 || response < 0.0) {
@@ -111,3 +111,10 @@ if (response > 5.0 || response < 0.0) {
   }
   alert("Thanks for your review! " + teacher + "'s average ratings is now " + " " + getRatingAvg(ratings));
 }
+//CG Education javascript III
+welcomeCollegeStudent = function (studentClass) {
+  alert("Welcome " + studentClass + "!");
+};
+welcomeHSStudent = function () {
+  alert("You're still a " + studentClass + "!");
+};
