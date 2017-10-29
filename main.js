@@ -112,25 +112,13 @@ if (response > 5.0 || response < 0.0) {
   alert("Thanks for your review! " + teacher + "'s average ratings is now " + " " + getRatingAvg(ratings));
 }
 //CG Education javascript III
-welcomeCollegeStudent = function (studentClass) {
+var welcomeCollegeStudent = function (studentClass) {
   alert("Welcome " + studentClass + "!");
 };
-welcomeHsStudent = function (studentClass) {
+var welcomeHsStudent = function (studentClass) {
   alert("You're still a " + studentClass + "!");
 };
 var gradDate = function (month, year) {
   return month + " " + parseInt(year);
 };
 //below is the start of the function needed to figure out graduating class and welome message to match
-var welcomeStudent = function (studentClass) {
-  if () {
-
-  }
-  else {
-
-  }
-}
-function welcomeStudentByGraduatingClass (gradDate, welcomeStudent) {
-  if gradDate = "Freshman"
-
-}
