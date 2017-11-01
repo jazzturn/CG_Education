@@ -122,7 +122,7 @@ var gradDate = function (month, year) {
   return month + " " + parseInt(year);
 };
 //may need to create a master welcome function here???
-var welcomeStudentByGraduatingClass(gradDate, welcome) {
+var welcomeStudentByGraduatingClass = function (gradDate, welcome) {
   var yearResponse = prompt("What year are you graduating?");
   var monthResponse = prompt("And what month will you graduate?");
 
@@ -130,30 +130,32 @@ var welcomeStudentByGraduatingClass(gradDate, welcome) {
     var yearResponse = prompt("What year are you graduating?");
     var monthResponse = prompt("And what month will you graduate?");
 
-    if (gradDate = "December 2017" || gradDate = "May 2018") {
+    if (gradDate == "December 2017" || gradDate == "May 2018") {
       alert("Welcome Senior!");
     }
-    else if (gradDate = "December 2018" || gradDate = "May 2019") {
+    else if (gradDate == "December 2018" || gradDate == "May 2019") {
       alert("Welcome Junior!");
     }
-    else if (gradDate = "December 2019" || gradDate = "May 2020") {
+    else if (gradDate == "December 2019" || gradDate == "May 2020") {
       alert("Welcome Sophomore!");
     }
-    else if (gradDate = "December 2020" || gradDate = "May 2021") {
+    else if (gradDate == "December 2020" || gradDate == "May 2021") {
       alert("Welcome Freshman!");
     }
-    else if (gradDate = "December 2021" || gradDate = "May 2022") {
+    else if (gradDate == "December 2021" || gradDate == "May 2022") {
       alert("You're still a Senior in high school!");
     }
-    else if (gradDate = "December 2022" || gradDate = "May 2023") {
+    else if (gradDate == "December 2022" || gradDate == "May 2023") {
       alert("You're still a Junior in high school!");
     }
-    else if (gradDate = "December 2023" || gradDate = "May 2024") {
+    else if (gradDate == "December 2023" || gradDate == "May 2024") {
       alert("You're still a Sophomore in high school!");
     }
-    else (gradDate = "December 2024" || gradDate = "May 2025") {
+    else (gradDate == "December 2024" || gradDate == "May 2025") {
       alert("You're still a Freshman! In HIGH SCHOOL!");
     }
+  }
+};
 };
 
-//below is the start of the function needed to figure out graduating class and welome message to match
+//now below, put Freshman, Sophomore, Junior, Senior in an array to avoid violating DRY rule
