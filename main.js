@@ -131,7 +131,9 @@ var monthResponse = prompt("And what month will you graduate?");
 var gradDate = function () {
 return  monthResponse + " " + parseInt(yearResponse);
 };
-var welcome = function () {
+
+
+var welcomeStudentByGraduatingClass = function (gradDate) {
   if (gradDate == "December 2017" || gradDate == "May 2018") {
     alert("Welcome Senior!");
   }
@@ -156,8 +158,4 @@ var welcome = function () {
   else if (gradDate == "December 2024" || gradDate == "May 2025") {
     alert("You're still a Freshman...In HIGH SCHOOL!");
   }
-};
-var welcomeStudentByGraduatingClass = function (gradDate, welcome) {
-  gradDate();
-  welcome();
 };
