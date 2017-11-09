@@ -159,3 +159,4 @@ var welcomeStudentByGraduatingClass = function (gradDate) {
     alert("You're still a Freshman...In HIGH SCHOOL!");
   }
 };
+//next steps, contract the code in welcomeStudentByGraduatingClass function.
